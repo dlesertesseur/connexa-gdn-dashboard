@@ -1,0 +1,146 @@
+{
+  "auth": {
+    "title": "¡Bienvenido!",
+    "forgotPassword": "Olvidé mi contraseña?",
+    "doNotHaveAccount": "¿No tienes una cuenta?",
+    "haveAccount": "¿Ya tienes una cuenta?",
+    "createAccount": "Crear una",
+    "label": {
+      "email": "Correo electronico",
+      "password": "Contraseña",
+      "language": "Idioma",
+      "copyright": "Copyright 2023"
+    },
+    "placeholder": {
+      "email": "un correo electronico",
+      "password": "una contraseña"
+    },
+    "button": {
+      "signIn": "Iniciar sesión",
+      "signOut": "Cerrar sesión",
+      "refresh": "Actualizar"
+    },
+    "validation": {
+      "emailFormat": "Correo electronico invalido",
+      "passwordFormat": "Contraseña invalida"
+    },
+    "errors": {
+      "title": "Error",
+      "text": "Error de autenticación"
+    }
+  },
+
+  "options": ["Importaciones", "Master plan"],
+
+  "label": {
+    "bad": "Embarque demorados",
+    "good": "Embarques a tiempo",
+    "regular": "Regular",
+    "shipments":"Embarques"
+  },
+
+  "card": {
+    "title": {
+      "1": "Moneda",
+      "2": "Cumplimiento de plan",
+      "3": "Evento",
+      "4": "Pais",
+      "5": "Division",
+      "6": "Estado",
+      "7": "Comprador",
+      "8": "Departamento",
+      "9": "Sprint"
+    }
+  },
+
+  "months": [
+    {
+      "abbreviation": "Ene",
+      "name": "Enero"
+    },
+    {
+      "abbreviation": "Feb",
+      "name": "Febrero"
+    },
+    {
+      "abbreviation": "Mar",
+      "name": "Marzo"
+    },
+    {
+      "abbreviation": "Abr",
+      "name": "Abril"
+    },
+    {
+      "abbreviation": "May",
+      "name": "Mayo"
+    },
+    {
+      "abbreviation": "Jun",
+      "name": "Junio"
+    },
+    {
+      "abbreviation": "Jul",
+      "name": "Julio"
+    },
+    {
+      "abbreviation": "Aug",
+      "name": "Agosto"
+    },
+    {
+      "abbreviation": "Sep",
+      "name": "Septiembre"
+    },
+    {
+      "abbreviation": "Oct",
+      "name": "Octubre"
+    },
+    {
+      "abbreviation": "Nov",
+      "name": "Noviembre"
+    },
+    {
+      "abbreviation": "Dic",
+      "name": "Diciembre"
+    }
+  ],
+
+  "masterPlan": {
+    "label": {
+      "seeYear": "Ver año",
+      "sales": "Ventas",
+      "distribution": "Distribución",
+      "reception": "Recepción",
+      "shipping": "Transporte",
+      "preparation": "Preparación"
+    },
+    "placeholder": {}
+  },
+  
+  "sprints": {
+    "sales": {
+      "label": "Ventas",
+      "description": "Sprint de ventas",
+      "color": "green"
+    },
+    "distribution": {
+      "label": "Distribución",
+      "description": "Sprint de distribución",
+      "color": "yellow"
+    },
+    "reception": {
+      "label": "Recepción",
+      "description": "Sprint de recepción",
+      "color": "orange"
+    },
+    "shipping": {
+      "label": "Envío",
+      "description": "Sprint de transporte",
+      "color": "blue.4"
+    },
+    "preparation": {
+      "label": "Preparación",
+      "description": "Sprint de preparación",
+      "color": "blue"
+    }
+  }
+}
