@@ -36,7 +36,7 @@
     "bad": "Embarque demorados",
     "good": "Embarques a tiempo",
     "regular": "Regular",
-    "shipments":"Embarques"
+    "shipments": "Embarques"
   },
 
   "card": {
@@ -115,7 +115,7 @@
     },
     "placeholder": {}
   },
-  
+
   "sprints": {
     "sales": {
       "label": "Ventas",
@@ -141,6 +141,53 @@
       "label": "Preparación",
       "description": "Sprint de preparación",
       "color": "blue"
+    }
+  },
+
+  "shipments": {
+    "columns": [
+      "Referencia",
+      "Producto",
+      "Analista",
+      "Evento",
+      "Pais origen",
+      "Valor (embarque)",
+      "Valor (ord. compra)",
+      "Moneda",
+      "Incoterm",
+      "FEUS",
+      "Proveedor",
+      "Requerido en CD",
+      "División",
+      "Departamento",
+      "Canal"
+    ],
+
+    "items": {
+      "columns": ["Imagen", "Codigo", "Descripcion", "UPC", "FOB", "Unidad", "Cantidad", "Precio", "Fecha"]
+    },
+
+    "button": {
+      "refresh": "Actualizar",
+      "purchaseOrder": "Orden de compra"
+    },
+
+    "label": {
+      "outOfDate": "Vencidas",
+      "onTime": "A tiempo",
+      "notRegistered": "N/D",
+      "lastUpdate": "Última actualización",
+      "nextUpdate": "Próxima actualización",
+      "businessObjective": "Objetivo de negocio",
+      "analyst": "Analista",
+      "buyer": "Comprador",
+      "feus": "FEUS",
+      "all": "Todos",
+      "seeOnMap": "Ver en mapa"
+    },
+
+    "filter": {
+      "title": "Seleccione los filtros"
     }
   }
 }

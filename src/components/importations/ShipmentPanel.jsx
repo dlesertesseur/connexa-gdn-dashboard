@@ -3,6 +3,7 @@ import { Tabs } from "@mantine/core";
 import { IconMoodAngry, IconMoodSmile } from "@tabler/icons-react";
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import ShipmentStatusDetail from "./ShipmentStatusDetail";
 
 const ShipmentPanel = ({ panel }) => {
   const { t } = useTranslation();
@@ -22,7 +23,9 @@ const ShipmentPanel = ({ panel }) => {
         </Tabs.Tab>
       </Tabs.List>
 
-      <Tabs.Panel value="good"></Tabs.Panel>
+      <Tabs.Panel value="good">
+        <ShipmentStatusDetail/>
+      </Tabs.Panel>
       <Tabs.Panel value="bad"></Tabs.Panel>
     </Tabs>
   );
