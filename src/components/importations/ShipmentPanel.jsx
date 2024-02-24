@@ -1,15 +1,25 @@
 /* eslint-disable react/prop-types */
 import { Tabs } from "@mantine/core";
 import { IconMoodAngry, IconMoodSmile } from "@tabler/icons-react";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
 import ShipmentStatusDetail from "./ShipmentStatusDetail";
 
 const ShipmentPanel = ({ panel }) => {
   const { t } = useTranslation();
+  const [shipmentGoodList, setShipmentGoodList] = useState(null);
+  const [shipmentBadList, setShipmentBadList] = useState(null);
 
   useEffect(() => {
-    console.log("panel data -> ", panel.data);
+    const shipmentGoodList = panel.data[0].data.map((s) => {
+      return s.shipment;
+    });
+    setShipmentGoodList(shipmentGoodList);
+
+    const shipmentBadList = panel.data[1].data.map((s) => {
+      return s.shipment;
+    });
+    setShipmentBadList(shipmentBadList);
   }, [panel]);
 
   return (
@@ -24,9 +34,11 @@ const ShipmentPanel = ({ panel }) => {
       </Tabs.List>
 
       <Tabs.Panel value="good">
-        <ShipmentStatusDetail/>
+        <ShipmentStatusDetail data={shipmentGoodList} />
       </Tabs.Panel>
-      <Tabs.Panel value="bad"></Tabs.Panel>
+      <Tabs.Panel value="bad" >
+        <ShipmentStatusDetail data={shipmentBadList}/>
+      </Tabs.Panel>
     </Tabs>
   );
 };

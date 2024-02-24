@@ -125,7 +125,7 @@ const UserProvier = ({ children }) => {
     setError(null);
     setUser(null);
     localStorage.removeItem("user");
-    userLog("logout");
+    //userLog("logout");
   };
 
   const getAll = async () => {
@@ -134,26 +134,26 @@ const UserProvier = ({ children }) => {
     setUsers(users);
   };
 
-  async function userLog(message) {
-    const body = JSON.stringify({
-      dateAndTime: new Date(),
-      source: `${user.lastname}, ${user.firstname}`,
-      message: message,
-    });
+  // async function userLog(message) {
+  //   const body = JSON.stringify({
+  //     dateAndTime: new Date(),
+  //     source: `${user.lastname}, ${user.firstname}`,
+  //     message: message,
+  //   });
 
-    const requestOptions = {
-      method: "POST",
-      mode: "cors",
-      headers: {
-        "Content-Type": "application/json",
-        token: user.token,
-      },
-      body: body,
-    };
+  //   const requestOptions = {
+  //     method: "POST",
+  //     mode: "cors",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //       token: user.token,
+  //     },
+  //     body: body,
+  //   };
 
-    const url = `${API_GDNAR}/log`;
-    await fetch(url, requestOptions);
-  }
+  //   const url = `${API_GDNAR}/log`;
+  //   await fetch(url, requestOptions);
+  // }
 
   return (
     <UserContext.Provider
@@ -166,7 +166,7 @@ const UserProvier = ({ children }) => {
         logOut,
         getAll,
         users,
-        userLog,
+        // userLog,
       }}
     >
       {children}

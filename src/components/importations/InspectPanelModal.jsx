@@ -21,7 +21,7 @@ const InspectPanelModal = ({ opened, close, panel }) => {
   } 
 
   return (
-    <Modal.Root opened={opened} onClose={close} size={"100%"} centered>
+    <Modal.Root opened={opened} onClose={close} size={"100%"} h={"100%"} centered>
       <Modal.Overlay />
       <Modal.Content>
         <Modal.Header>

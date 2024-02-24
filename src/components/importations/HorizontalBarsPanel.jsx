@@ -5,7 +5,8 @@ import { useEffect, useState } from "react";
 import { useUserContext } from "../../context/UserContext";
 import { getIndicator } from "../../data/indicators";
 
-const HorizontalBarsPanel = ({ title = "NO TITLE", color = "blue", name, onclick }) => {
+// eslint-disable-next-line no-unused-vars
+const HorizontalBarsPanel = ({ title = "NO TITLE", color = "blue", name, onclick=null }) => {
   const { user } = useUserContext();
   const [data, setData] = useState(null);
 
@@ -41,7 +42,7 @@ const HorizontalBarsPanel = ({ title = "NO TITLE", color = "blue", name, onclick
       withBorder
       h={200}
       onClick={() => {
-        onclick(title, name, data);
+        //onclick(title, name, data);
       }}
     >
       <Stack>
